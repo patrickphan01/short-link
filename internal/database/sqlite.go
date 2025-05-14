@@ -3,6 +3,7 @@ package database
 import (
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
+	"github.com/patrickphan01/short-link/internal/models"
 )
 
 
@@ -12,5 +13,5 @@ func NewSQLite(){
 	if err != nil {
 		panic("failed to connet to the database")
 	}
-
+	db.AutoMigrate(&models.ShortLink{})
 }

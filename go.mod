@@ -1,4 +1,4 @@
-module github.com/phankieuphu/go_common
+module github.com/patrickphan01/short-link
 
 go 1.23.3
 

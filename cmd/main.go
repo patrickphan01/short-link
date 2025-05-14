@@ -3,16 +3,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/gin-gonic/gin"
+	"github.com/patrickphan01/short-link/internal/database"
+	"github.com/patrickphan01/short-link/internal/routers"
 )
 
-
-
-
-func main(){
-
-	r := gin.Default()
-
+func main() {
+	database.NewSQLite()
+	r := routers.InitRouters()
 	fmt.Println("Server listen on port:8080")
 	r.Run()
 

@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/phankieuphu/go_common/internal/pkg"
+	"github.com/patrickphan01/short-link/internal/pkg"
 
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
